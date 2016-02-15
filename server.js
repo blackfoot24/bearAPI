@@ -1,9 +1,9 @@
 var express = require('express');
 var app = express();
 
-var monte = {name: 'Leyroy', id: 23, age: 43, gender: 'male'};
+var monte = {name: 'Leyroy', id: 1100, age: 43, gender: 'male'};
 
-var paul = {name: 'Jenkins', id: 99, age: 34, gender: 'female'};
+var paul = {name: 'Jenkins', id: 1110, age: 34, gender: 'female'};
 
 var bear = [monte, paul];
 
