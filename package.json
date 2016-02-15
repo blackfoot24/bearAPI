@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/blackfoot24/bearAPI/issues"
   },
-  "homepage": "https://github.com/blackfoot24/bearAPI#readme"
+  "homepage": "https://github.com/blackfoot24/bearAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0"
+  }
 }
