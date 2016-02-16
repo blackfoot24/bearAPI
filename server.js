@@ -9,13 +9,12 @@ var paul = {name: 'Jenkins', id: 1110, age: 34, gender: 'female'};
 
 var bears = [monte, paul];
 
-app.get('/api/bear', function(req, res){
-	res.json(bears)
-});
 
 app.get('/api/bear/:id', function(req, res){
 	var thisbear = " "
+	
 	var id = req.params.id;
+	
 	console.log(id);
 
 		bears.forEach(function(bear){
@@ -26,6 +25,25 @@ app.get('/api/bear/:id', function(req, res){
 
 	res.json(thisbear);
 });
+
+app.delete('/api/bear/:id', function(req, res){
+	var bearToDelete = " ";
+	
+	var id = req.params.id;
+	
+	console.log(id);
+
+	bears.forEach(function(bear){
+	if(bear.id.toString() === id.toString()) {
+		bearToDelete = bear 
+
+		index = bears.indexOf(bearToDelete)
+
+		}
+	})
+	res.json(bears.splice(index,1));
+});
+	
 
 app.post('/api/bear', function(req, res){
 	
